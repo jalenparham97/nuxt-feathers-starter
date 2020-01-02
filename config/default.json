@@ -10,10 +10,7 @@
     "entity": "user",
     "service": "users",
     "secret": "iv4HSCD9qS0lyvDanggunY1CQ9c=",
-    "authStrategies": [
-      "jwt",
-      "local"
-    ],
+    "authStrategies": ["jwt", "local"],
     "jwtOptions": {
       "header": {
         "typ": "access"
@@ -28,5 +25,5 @@
       "passwordField": "password"
     }
   },
-  "mongodb": "mongodb+srv://jalenparham:Cmbb34141@feathers-todo-fbkrl.mongodb.net/test?retryWrites=true&w=majority"
+  "mongodb": "your mongodb uri"
 }
