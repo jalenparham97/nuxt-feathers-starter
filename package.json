@@ -1,0 +1,66 @@
+{
+  "name": "nuxt-feathers",
+  "description": "A Nuxt with Feathers starter template",
+  "version": "0.0.0",
+  "homepage": "",
+  "main": "server",
+  "keywords": [
+    "feathers"
+  ],
+  "author": {
+    "name": "Jalen Parham",
+    "email": "jalenparham97@gmail.com"
+  },
+  "contributors": [],
+  "bugs": {},
+  "directories": {
+    "lib": "server",
+    "test": "test/",
+    "config": "config/"
+  },
+  "engines": {
+    "node": "^12.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "scripts": {
+    "build": "nuxt build",
+    "test": "npm run eslint && npm run jest",
+    "eslint": "eslint server/. test/. --config .eslintrc.json",
+    "dev": "cross-env DEBUG=nuxt:* nodemon server/",
+    "start": "npm run build && node server/",
+    "jest": "jest  --forceExit"
+  },
+  "dependencies": {
+    "@feathersjs/authentication": "^4.4.3",
+    "@feathersjs/authentication-client": "^4.4.3",
+    "@feathersjs/authentication-local": "^4.4.3",
+    "@feathersjs/authentication-oauth": "^4.4.3",
+    "@feathersjs/configuration": "^4.4.3",
+    "@feathersjs/errors": "^4.4.3",
+    "@feathersjs/express": "^4.4.3",
+    "@feathersjs/feathers": "^4.4.3",
+    "@feathersjs/socketio": "^4.4.3",
+    "@feathersjs/socketio-client": "^4.4.3",
+    "@feathersjs/transport-commons": "^4.4.3",
+    "compression": "^1.7.4",
+    "cookie-storage": "^5.0.3",
+    "cors": "^2.8.5",
+    "feathers-vuex": "^3.2.1",
+    "feathers-mongoose": "^8.1.1",
+    "helmet": "^3.21.2",
+    "nuxt": "^2.11.0",
+    "serve-favicon": "^2.5.0",
+    "socket.io-client": "^2.3.0",
+    "winston": "^3.2.1",
+    "mongodb-core": "^3.2.7",
+    "mongoose": "^5.8.3"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^1.2.0",
+    "axios": "^0.19.0",
+    "cross-env": "^6.0.3",
+    "eslint": "^6.8.0",
+    "jest": "^24.9.0",
+    "nodemon": "^2.0.2"
+  }
+}
